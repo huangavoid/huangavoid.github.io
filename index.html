@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="huangavoid@126.com" />
+        <meta name="copyright" content="huangavoid@126.com" />
+        
+        <meta name="description" content="huangavoid@126.com的扎记" />
+        
+        
+        <title>扎记</title>
+        
+        <link rel="stylesheet" type="text/css" href="./theme/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./theme/css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" type="text/css" href="./theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="./theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="./theme/css/custom.css" media="screen">
+    </head>
+    <body>
+        <div id="content-sans-footer">
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="./"><span class=site-name>扎记</span></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right top-menu">
+                            <li  class="active"><a href=".">首页</a></li>
+                            <li ><a href="./categories.html">分类</a></li>
+                            <li ><a href="./tags.html">标签</a></li>
+                            <li ><a href="./archives.html">归档</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+<div class="row-fluid">
+    <div class="span5 offset1">
+        <header>
+            <h1 id="recent-posts">最近</h1>
+        </header>
+    </div>
+    <div class="span5">
+        <header>
+            <h1 id="about-me">关于</h1>
+        </header>
+        <ul class="list-all-articles">
+            <li>联系 <span class="proj-desc">huangavoid@126.com</span></li>
+            <li>工作 <span class="proj-desc">软件开发 股票证券</span></li>
+            <li>技能 <span class="proj-desc">Java Python JavaSrcipt</span></li>
+            <li>日常 <span class="proj-desc">烹饪 健身 酒水 摄影</span></li>
+            <li>备注 <span class="proj-desc">版权所有 欢迎转载</span></li>
+        </ul>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span10 offset1">
+        <header>
+            <h1 id="my-project">广告</h1>
+        </header>
+        <div>
+            欢迎刊登
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+        <div class="returnTop" title="回到顶部">
+            <span class="s"></span>
+            <span class="b"></span>
+        </div>
+        </div>
+        
+        <footer>
+            <div id="footer">
+                <ul class="footer-content">
+                    <li class="elegant-power">Powered by <a href="http://getpelican.com/">Pelican</a> and <a href="http://pages.bitbucket.org/">Bitbucket Pages</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        <script type="text/javascript" src="./theme/js/jquery.min.js"></script>
+        <script type="text/javascript" src="./theme/js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript">
+        /* <![CDATA[ */
+        jQuery(document).ready(function() {
+            
+            $(window).bind("scroll", function(){
+                var scrollTopNum = $(document).scrollTop(),
+                    winHeight = $(window).height(),
+                    returnTop = $("div.returnTop");
+                (scrollTopNum > 0) ? returnTop.fadeIn("fast") : returnTop.fadeOut("fast");
+                if (!-[1,]&&!window.XMLHttpRequest) {
+                  returnTop.css("top", scrollTopNum + winHeight - 200);
+                }
+            });
+            $("div.returnTop").click(function() {
+                $("html, body").animate({ scrollTop: 0 }, 100);
+            });
+        });
+        /* ]]> */
+        </script>
+    </body>
+</html>
