@@ -10,7 +10,7 @@
         <meta name="description" content="huangavoid@126.com的扎记" />
         
 <meta name="keywords" content="Python, Pelican, Git, 技术, " />
-<meta name="summary" content="生存页面 搭建环境 详细说明，请参考Pelican官方网站，以及官方文档。 安装Pelican pip install pelican 安装Markdown支持库，以及配置文件的排版增强支持库。 pip install markdown ..." />
+<meta name="summary" content="生成应用 搭建环境 详细说明，请参考Pelican官方网站，以及官方文档。 安装Pelican pip install pelican 安装Markdown支持库，以及配置文件的排版增强支持库。 pip install markdown ..." />
         
         <title>使用Pelican搭建静态网站 · 简明手扎
 </title>
@@ -90,23 +90,23 @@
         <nav>
         <div class="toc">
 <ul>
-<li><a href="#_1">生存页面</a><ul>
+<li><a href="#_1">生成应用</a><ul>
 <li><a href="#_2">搭建环境</a></li>
 <li><a href="#_3">创建应用</a></li>
 <li><a href="#_4">使用主题</a></li>
 <li><a href="#_5">添加插件</a></li>
 <li><a href="#_6">编写内容</a></li>
-<li><a href="#http">生成页面，启动HTTP服务</a></li>
+<li><a href="#_7">生成页面</a></li>
 </ul>
 </li>
-<li><a href="#_7">部署应用</a></li>
+<li><a href="#_8">部署应用</a></li>
 </ul>
 </div>
         </nav>
         
         <hr/>
         
-<h1 id="_1">生存页面</h1>
+<h1 id="_1">生成应用</h1>
 <h2 id="_2">搭建环境</h2>
 <p>详细说明，请参考<a href="http://blog.getpelican.com/">Pelican官方网站</a>，以及<a href="http://docs.getpelican.com/en/3.5.0/">官方文档</a>。</p>
 <ol>
@@ -174,9 +174,9 @@ Summary: Short version for index and feeds
 
 This is the content of my super blog post.
 ![Image Text]({filename}/images/goodimages.jpg)
-[Download Text]({attch}/downloads/goodthings.zip)
+[Download Text]({attach}/downloads/goodthings.zip)
 </code></pre>
-<h2 id="http">生成页面，启动HTTP服务</h2>
+<h2 id="_7">生成页面</h2>
 <pre><code>pelican -o output/path -s setting/path/pelicanconfig.py
 cd output/path
 python -m SimpleHTTPServer 8000
@@ -185,7 +185,7 @@ python -m SimpleHTTPServer 8000
 <pre><code>fab build
 fab serve
 </code></pre>
-<h1 id="_7">部署应用</h1>
+<h1 id="_8">部署应用</h1>
 <p>可使用<a href="https://pages.github.com/">Github Page</a>、<a href="http://pages.bitbucket.org/">Bitbucket Page</a>等空间。</p>
 <ol>
 <li>
@@ -194,7 +194,7 @@ fab serve
 <li>
 <p>初始化本地仓库，添加远程仓库，并拉取到本地</p>
 <pre><code>git init
-git remote add origin git@github.com:username/username.gitbucket.io.git master
+git remote add origin git@github.com:username/username.github.io.git master
 git pull origin master:master
 </code></pre>
 </li>
