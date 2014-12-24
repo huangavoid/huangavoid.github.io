@@ -147,8 +147,8 @@ sudo('/etc/init.d/nginx start')     # 执行远程sudo
 </code></pre>
 <h1 id="_7">角色定义</h1>
 <pre><code>host1 = 'user@192.168.1.1:22'
-host1 = 'user@192.168.1.2:22'
-host1 = 'user@192.168.1.3:22'
+host2 = 'user@192.168.1.2:22'
+host3 = 'user@192.168.1.3:22'
 
 env.hosts = [ host1, host2, host3 ]
 
@@ -176,8 +176,8 @@ from fabric.api import *
 from fabric.contrib.console import confirm
 
 host1 = 'user@192.168.1.1:22'
-host1 = 'user@192.168.1.2:22'
-host1 = 'user@192.168.1.3:22'
+host2 = 'user@192.168.1.2:22'
+host3 = 'user@192.168.1.3:22'
 
 env.passwords = {
     host1: "pwd_of_host1",
